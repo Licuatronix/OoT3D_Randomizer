@@ -98,7 +98,7 @@ void PlayerActor_rInit(Actor* thisx, GlobalContext* globalCtx) {
 
 void Player_Action_rJump(Player* thisx, GlobalContext* globalCtx) {
     Player* this = (Player*)thisx;
-     //my first attempt to restore link`s land roll mechanic
+    //my first attempt to restore link`s land roll mechanic
     //this is the same hacky fix that the n64 ver uses, play a land anim (0x237) on frame 0 when link starts to fall
     //the 3ds ver does not do this, so lets see what happends
 
@@ -114,7 +114,7 @@ void Player_Action_rJump(Player* thisx, GlobalContext* globalCtx) {
     //last frame
     //mode
     //morphframe
-    Player_Action_Jump(thisx, globalCtx);
+    //Player_Action_Jump(thisx, globalCtx);
 }
 
 void PlayerActor_rUpdate(Actor* thisx, GlobalContext* globalCtx) {
