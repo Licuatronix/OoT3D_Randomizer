@@ -114,7 +114,7 @@ void Player_Action_rJump(Player* thisx, GlobalContext* globalCtx) {
     //last frame
     //mode
     //morphframe
-    Player_Action_Jump(player, globalCtx);
+    Player_Action_Jump(thisx, globalCtx);
 }
 
 void PlayerActor_rUpdate(Actor* thisx, GlobalContext* globalCtx) {
