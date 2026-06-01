@@ -142,7 +142,8 @@ void PlayerActor_rUpdate(Actor* thisx, GlobalContext* globalCtx) {
     }
     sPrevHealth = gSaveContext.health;
 
-    if (PLAYER->actionFunc == Player_Action_Jump) {
+    //Temp
+    if (PLAYER->actionFunc == Player_Action_Running) {
     //my attempt to restore link`s land roll mechanic
     //this is the same hacky fix that the n64 ver uses, play a land anim (0x237) on frame 0 when link starts to fall
     //the 3ds ver does not do this, so lets see what happends
@@ -159,7 +160,6 @@ void PlayerActor_rUpdate(Actor* thisx, GlobalContext* globalCtx) {
     //last frame
     //mode
     //morphframe
-    //Player_Action_Jump(thisx, globalCtx);
     }
 }
 
