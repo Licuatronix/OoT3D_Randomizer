@@ -142,15 +142,15 @@ void PlayerActor_rUpdate(Actor* thisx, GlobalContext* globalCtx) {
     }
     sPrevHealth = gSaveContext.health;
 
-    //Temp
-    if (PLAYER->actionFunc == Player_Action_Running) {
+    //trying to find a way to manually trigger the code just to see if its working
+    if (rGameplayFrames % 15 == 0) {
     //my attempt to restore link`s land roll mechanic
     //this is the same hacky fix that the n64 ver uses, play a land anim (0x237) on frame 0 when link starts to fall
     //the 3ds ver does not do this, so lets see what happends
 
     //todo: trigger this only when link starts lossing vertical speed aka he is falling, and only on frame 0
     //leaving this like this only for see if i did it right
-    LinkAnimation_Change(&this->skelAnime, globalCtx, 0x237, 1.0, 0.0, 25.0, 0, 0.0);
+    LinkAnimation_Change(&this->skelAnime, globalCtx, 0x237, 1.0, 0.0, 40.0, 1, 0.0);
      //self notes, delete later
      //actor skel
      //global contex
