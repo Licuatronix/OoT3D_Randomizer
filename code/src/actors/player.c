@@ -104,7 +104,7 @@ void Player_Action_rJump(Player* player, GlobalContext* globalCtx) {
 
     //todo: trigger this only when link starts lossing vertical speed aka he is falling, and only on frame 0
     //leaving this like this only for see if i did it right
-    LinkAnimation_Change(PLAYER->skelAnime, globalCtx, 0x237, 1.0, 0.0, 25.0, 0, 0.0);
+    LinkAnimation_Change(&this->skelAnime, globalCtx, 0x237, 1.0, 0.0, 25.0, 0, 0.0);
      //self notes, delete later
      //actor skel
      //global contex
