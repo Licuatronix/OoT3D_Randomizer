@@ -19,7 +19,7 @@ void PlayerActor_Update(Actor* thisx, GlobalContext* globalCtx);
 void PlayerActor_Destroy(Actor* thisx, GlobalContext* globalCtx);
 void PlayerActor_Draw(Actor* thisx, GlobalContext* globalCtx);
 
-void Player_Action_Jump(Player* player, GlobalContext* globalCtx);
+void Player_Action_Jump(Player* thisx, GlobalContext* globalCtx);
 
 void Player_Action_Running(Player* player, GlobalContext* globalCtx);
 
