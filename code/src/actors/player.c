@@ -145,10 +145,9 @@ void PlayerActor_rUpdate(Actor* thisx, GlobalContext* globalCtx) {
     //this is the same hacky fix that the n64 ver uses, play a land anim (0x237) on frame 0 when link starts to fall
     //the 3ds ver does not do this, so lets see what happends
     if (PLAYER->actor.velocity.y < 0 && PLAYER->fallDistance >= 75) {
-        //if (PLAYER->skelAnime.animIndex == 0x6b) {
-        //first need to make it to only play when falling, then make it only play on running fall
+        if (PLAYER->skelAnime.animIndex == 0x6b) {
         LinkAnimation_Change(&this->skelAnime, globalCtx, 0x237, 1.0, 0.0, 0.0, 0, -2.0);
-       // }
+        }
     }
 }
 
