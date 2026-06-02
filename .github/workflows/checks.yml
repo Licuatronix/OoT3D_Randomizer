@@ -8,7 +8,7 @@ env:
   GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
 
 on:
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   format:
