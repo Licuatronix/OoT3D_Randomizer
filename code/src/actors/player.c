@@ -144,7 +144,7 @@ void PlayerActor_rUpdate(Actor* thisx, GlobalContext* globalCtx) {
     //my attempt to restore link`s land roll mechanic
     //this is the same hacky fix that the n64 ver uses, play a land anim (0x237) on frame 0 when link starts to fall
     //the 3ds ver does not do this, so lets see what happends
-    if (PLAYER->actor.velocity.y < 0.0 && PLAYER->actor.fallDistance > 0) {
+    if (PLAYER->skelAnime.animIndex == 0x6b && PLAYER->actor.velocity.y < 0.0 && PLAYER->actor.fallDistance > 0) {
         
     //todo: trigger this only when link starts lossing vertical speed aka he is falling, and only on frame 0
     //ok i actually did it right! but now i`ll set the end frame to 0
